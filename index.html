@@ -1,12 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
   <head> 
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <title>Sheila.Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
-
+    <script src="https://kit.fontawesome.com/4398062edc.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>Sheila Chepkemoi Portfolio</h1>
+    <h1>Sheila Chepkemoi</h1>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo1.jpg" class="logo">
+                <ul>
+                    <li> <a href = "#">Home</a></li>
+                    <li> <a href = "#">About</a></li>
+                    <li> <a href = "#">Services</a></li>
+                    <li> <a href = "#">Portfolio</a></li>
+                    <li> <a href = "#">Contact</a></li>
+            </nav>
+            <div class="header-text">
+                <p>Microservices Developer</p>
+                <h1>Hi! I'm <span>Sheila</span> a software engineer from Kenya</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about"> 
+        <div class="container">
+            <div class="row">
+                <div class ="about-col-1">
+                    <img src="./images/logo1.jpg" class="logo">
+                </div> 
+                <div class ="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am a passionate and experienced microservices developer with a deep love for crafting scalable, resilient, and high-performance applications using microservices architecture. My journey in software development has been marked by a continuous quest for innovative solutions and a dedication to staying at the forefront of modern technology trends. 
+                        <span>My Mission:</span> To architect and build software systems that empower businesses to thrive in today's fast-paced, ever-changing digital landscape.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick ="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick ="opentab('experience')" >Experience</p>
+                        <p class="tab-links" onclick ="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Microservices Developer</span><br>designing, developing, and maintaining microservices-based applications</li>
+                            <li><span>Web Developer</span><br>designing, developing, and maintaining microservices-based applications</li>
+                            <li><span>Software Tester</span><br>designing, developing, and maintaining microservices-based applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Telco</span><br>designing, developing, and maintaining microservices-based applications</li>
+                            <li><span>Hungary</span><br>designing, developing, and maintaining microservices-based applications</li>
+                            <li><span>Eng</span><br>designing, developing, and maintaining microservices-based applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Moringa School</span><br>designing, developing, and maintaining microservices-based applications</li>
+                            <li><span>Lamak</span><br>designing, developing, and maintaining microservices-based applications</li>
+                            <li><span>Henry school of IT</span><br>designing, developing, and maintaining microservices-based applications</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title black-text">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Microservices Development</h2>
+                <p>Designing, developing, and maintaining microservices-based applications
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Development</h2>
+                <p>Designing, developing, and maintaining microservices-based applications
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios fa-beat-fade"></i>
+                <h2>Test Automation</h2>
+                <p>Designing, developing, and maintaining microservices-based applications
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<!-- portfolio-->
+<div id="portfolio">
+    <div class ="container">
+        <h1 class="sub-title black-text">My Work</h1>
+        <div class="work-list">
+            <div class= "work">
+                <img src="./images/logo1.jpg" >
+                <div class="layer">
+                    <h3>Bank Application</h3>
+                    <p>THis application keeps manages customers details and their credit score</p>
+                    <a href="#"><i class="fa-solid fa-arrow-right fa-beat"></i></a>
+                </div>
+
+            </div>
+            <div class= "work">
+                <img src="./images/logo1.jpg" >
+                <div class="layer">
+                    <h3>Bank Application</h3>
+                    <p>THis application keeps manages customers details and their credit score</p>
+                    <a href="#"><i class="fa-solid fa-arrow-right fa-beat"></i></a>
+                </div>
+
+            </div>
+            <div class= "work">
+                <img src="./images/logo1.jpg" >
+                <div class="layer">
+                    <h3>Bank Application</h3>
+                    <p>THis application keeps manages customers details and their credit score</p>
+                    <a href="#"><i class="fa-solid fa-arrow-right fa-beat"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!--
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script> 
+-->
     <script src="./script.js"></script>
   </body>
 </html>
